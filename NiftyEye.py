@@ -5,8 +5,12 @@ import matplotlib.pyplot as plt
 
 ###################
 
-url = "https://api.opensea.io/api/v1/events?only_opensea=false&offset=0&limit=1&occurred_after=2021-10-16T20%3A35%3A43.511Z"
-headers = {"Accept": "application/json"}
+url = "https://testnets-api.opensea.io/api/v1/events?only_opensea=false&offset=0&limit=20"
+
+headers = {
+    "Accept": "application/json",
+    "X-API-KEY": "5bec8ae0372044cab1bef0d866c98618"
+}
 seenTokens = []
 
 
